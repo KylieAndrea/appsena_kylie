@@ -1,0 +1,46 @@
+main{
+    margin: auto;
+    width: 90%;
+}
+header{
+    border: 1px solid purple;
+    height: 100px;
+
+}
+.sect1{
+    margin: auto;
+    border: solid 2px purple;
+    height: 500px;
+}
+aside{
+    border: solid 1px blue;
+    height: 500px;
+    width: 20%;
+    float: left;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+.sect2{
+    border: solid 1px rgb(6, 6, 41);
+    height: 500px;
+    width: 80%;
+    float: right;
+    padding: 20px;
+}
+article{
+    margin:auto;
+    height: 200px;
+    width: 200px;
+    border: solid 1px pink;
+}
+footer{
+    height: 100px;
+    border: solid 1px red;
+}

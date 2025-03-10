@@ -23,6 +23,48 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main>
+    <header></header>
+    <section class="sect1">
+      <aside>
+        <table>
+            <tbody>
+              <tr>
+                  <td>
+                    new carro
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= link_to "Show this carro", @carro %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    edit
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= link_to "Back to carros", carros_path %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <%= link_to "Destroy this carro", @carro %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </aside>
+      <section class="sect2">
+        <article>
+          <%= yield %>
+        </article>
+      </section>
+    </section>
+    <footer></footer>
+    </main>
   </body>
+
 </html>
