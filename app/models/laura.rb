@@ -1,0 +1,2 @@
+class Laura < ApplicationRecord
+end

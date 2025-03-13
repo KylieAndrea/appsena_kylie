@@ -1,0 +1,2 @@
+class Crochet < ApplicationRecord
+end

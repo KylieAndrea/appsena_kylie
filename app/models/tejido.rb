@@ -1,0 +1,2 @@
+class Tejido < ApplicationRecord
+end

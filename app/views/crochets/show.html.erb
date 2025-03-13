@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @crochet %>
+
+<div>
+  <%= link_to "Edit this crochet", edit_crochet_path(@crochet) %> |
+  <%= link_to "Back to crochets", crochets_path %>
+
+  <%= button_to "Destroy this crochet", @crochet, method: :delete %>
+</div>

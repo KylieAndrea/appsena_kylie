@@ -1,0 +1,27 @@
+<%= form_with(model: laura) do |form| %>
+  <% if laura.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(laura.errors.count, "error") %> prohibited this laura from being saved:</h2>
+
+      <ul>
+        <% laura.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :personalidad, style: "display: block" %>
+    <%= form.text_field :personalidad %>
+  </div>
+
+  <div>
+    <%= form.label :caracteristicas, style: "display: block" %>
+    <%= form.text_field :caracteristicas %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Crochets" %>
+
+<h1>Crochets</h1>
+
+<div id="crochets">
+  <% @crochets.each do |crochet| %>
+    <%= render crochet %>
+    <p>
+      <%= link_to "Show this crochet", crochet %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New crochet", new_crochet_path %>

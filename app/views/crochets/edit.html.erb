@@ -1,0 +1,12 @@
+<% content_for :title, "Editing crochet" %>
+
+<h1>Editing crochet</h1>
+
+<%= render "form", crochet: @crochet %>
+
+<br>
+
+<div>
+  <%= link_to "Show this crochet", @crochet %> |
+  <%= link_to "Back to crochets", crochets_path %>
+</div>
