@@ -15,6 +15,10 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_05_211304) do
     t.string "modelo"
     t.string "color"
     t.integer "cantidad"
+ActiveRecord::Schema[8.0].define(version: 2025_03_13_070652) do
+  create_table "carros", force: :cascade do |t|
+    t.string "modelo"
+    t.string "placa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -22,6 +26,17 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_05_211304) do
   create_table "lauras", force: :cascade do |t|
     t.string "personalidad"
     t.string "caracteristicas"
+  create_table "cars", force: :cascade do |t|
+    t.string "placa"
+    t.integer "modelo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "nombre"
+    t.string "tipo_documento"
+    t.integer "documento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

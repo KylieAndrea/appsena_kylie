@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Cars" %>
+<div id="cars">
+  
+  <% @cars.each do |car| %>
+  <% end %>
+  <ul>
+    <%= render @cars %>
+  </ul>
+</div>
+

@@ -23,6 +23,59 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main>
+    <header>Car's</header>
+    <div class='div1'>
+      <div class="div2">
+      <%= image_tag "cars/carro_rojo-removebg-preview.png", alt: "carro rojo", width: "110px", height: "90px" %>
+      <%= image_tag "cars/humo.png", alt: "gas", width: "70px", height: "70px" %>
+      </div>
+      <nav><a href="aplication.html.erb"><%= link_to "Crear nuevo", new_car_path %></a></nav>
+      <nav><a href="aplication.html.erb"><%= link_to "consultar", @car %></a></nav>
+      <nav><a href="aplication.html.erb"><%= link_to "Editar", edit_car_path(1) %></a></nav>
+      <nav><a href="aplication.html.erb"><%= link_to "Todos los carros", cars_path %></a></nav>
+      <nav><a href="aplication.html.erb"><%= link_to "Eliminar", @car %></a></nav>
+    </div>
+    <section class="sect1">
+      <aside>
+        <table>
+            <tbody>
+              <tr>
+                  <td>
+                    <%= link_to "New car", new_car_path %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= link_to "Show this carro", @car %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= link_to "Edit this car", edit_car_path(1) %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= link_to "Back to cars", cars_path %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <%= link_to "Destroy this car", @car %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </aside>
+      <section class="sect2">
+          <%= yield %>
+      </section>
+    </section>
+    </main>
+    <center>
+    <footer>Footer</footer>
+    </center>
   </body>
+
 </html>

@@ -1,0 +1,29 @@
+
+
+.car-element {
+    border: 2px solid black; /* Borde negro alrededor del cuadro */
+    padding: 15px;
+    width: 250px; /* Ancho del cuadro */
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-element:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
