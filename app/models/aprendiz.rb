@@ -1,0 +1,2 @@
+class Aprendiz < ApplicationRecord
+end
