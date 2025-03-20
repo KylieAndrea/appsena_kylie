@@ -1,0 +1,11 @@
+p{
+    color:black
+}
+.art01{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+    border: none;
+}

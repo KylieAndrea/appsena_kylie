@@ -3,9 +3,12 @@ Rails.application.routes.draw do
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
+  devise_for :user
+  root to: "home#welcome"
   get "up" => "rails/health#show", as: :rails_health_check
   get "ficha" => "aprendices#ficha"
   get "sede" => "aprendices#sede"
+  get "home" => "home#welcome"
 
   resources :aprendices
   resources :crochets

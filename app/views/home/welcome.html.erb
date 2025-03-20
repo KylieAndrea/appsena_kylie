@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="welcome.css">
+<article class="art01">
+    <% if user_signed_in? %>
+        <h1>Bienvenido seas!</h1><br>
+        <p>Bienvenido, <%= current_user.email %></p><br>
+        <%= link_to "cerrar seccion", destroy_user_session_path, method: :delete %>
+    <% end %>
+</article>
